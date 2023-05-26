@@ -1,0 +1,134 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-col: #443857;
+  --white: #ffffff;
+  --border-color: #e8f1f4;
+  --light-gray: #fafafa;
+  --blue: #41c0f0;
+}
+
+body {
+  font-family: "Roboto";
+  color: var(--text-col);
+  background-color: var(--white);
+}
+
+.coupon {
+  margin: 2rem;
+  padding: 2rem;
+  border: 10px solid var(--border-color);
+}
+.coupon .content {
+  display: grid;
+  gap: 3rem;
+}
+.coupon .common {
+  padding: 1.5rem;
+  border-top: 2px solid var(--border-color);
+  background-color: var(--light-gray);
+}
+.coupon .heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.coupon h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.coupon h4 {
+  font-size: 1.5rem;
+}
+.coupon .voucher-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.coupon .voucher-bg {
+  max-width: 20rem;
+}
+.coupon .voucher-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.coupon .btn {
+  display: flex;
+  justify-content: center;
+}
+.coupon button {
+  border: none;
+  background-color: var(--blue);
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+  cursor: pointer;
+}
+.coupon textarea,
+.coupon input {
+  outline: none;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  border: solid 1px #d4d4d4;
+  color: #888;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  resize: none;
+  padding: 1rem;
+}
+.coupon textarea:focus,
+.coupon input:focus {
+  border: 1px solid var(--blue);
+}
+.coupon .text {
+  margin-top: 0.2rem;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  display: flex;
+}
+.coupon a {
+  color: var(--blue);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.coupon .text-area p {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  padding: 1rem;
+  color: #888;
+  width: 100%;
+  border-radius: 8px;
+  border: solid 1px #d4d4d4;
+}
+.coupon .coupon-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.coupon .coupon-wrapper .coupon-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.coupon .coupon-wrapper span {
+  color: var(--blue);
+  padding: 1rem;
+  background-color: var(--light-gray);
+  border-radius: 5px;
+  font-weight: 600;
+}
+.coupon .coupon-wrapper .expire {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
